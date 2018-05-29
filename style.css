@@ -1,0 +1,5 @@
+.custom{
+    text-align:center;
+    flex-grow:0;
+    flex-basis:25%;
+}
