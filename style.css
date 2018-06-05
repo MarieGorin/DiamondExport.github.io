@@ -3,3 +3,20 @@
     flex-grow:0;
     flex-basis:25%;
 }
+footer{
+    background-color:black;
+    text-align: left;
+    min-width: 60px;
+    font-style: 'Arial Narrow';
+    font-size: 11px;
+    color: white;
+    padding: 20px;
+}
+main{
+    font-style: 'Arial Narrow';
+    font-size: 14px;
+    justify-items: center;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+}
