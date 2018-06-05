@@ -20,3 +20,8 @@ main{
     align-items: stretch;
     align-content: center;
 }
+
+.contactelement{
+    text-align:center;
+    -webkit-margin-after: 0.5em;
+}
