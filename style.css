@@ -12,13 +12,10 @@ footer{
     color: white;
     padding: 20px;
 }
-main{
-    font-style: 'Arial Narrow';
-    font-size: 14px;
-    justify-items: center;
-    justify-content: center;
-    align-items: stretch;
-    align-content: center;
+#collection{
+font-style: 'Arial Narrow';
+font-size: 14px;
+color: black;
 }
 
 .contactelement{
