@@ -12,11 +12,6 @@ footer{
     color: white;
     padding: 20px;
 }
-#collection.container{
-font-style: 'Arial Narrow';
-font-size: 14px;
-color: black;
-}
 
 .contactelement{
     text-align:center;
@@ -44,5 +39,8 @@ color: black;
         height:100px;
     }
     
+    .with-margin{
+        margin:10px;
+    }
 
 
