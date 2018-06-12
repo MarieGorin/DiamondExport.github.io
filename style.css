@@ -12,7 +12,7 @@ footer{
     color: white;
     padding: 20px;
 }
-#collection{
+#collection.container{
 font-style: 'Arial Narrow';
 font-size: 14px;
 color: black;
