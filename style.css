@@ -1,7 +1,15 @@
+p{
+  font-family: 'Tajawal', sans-serif;;  
+}
+
 .custom{
     text-align:center;
     flex-grow:0;
     flex-basis:25%;
+}
+
+.centerelement{
+    text-align:center;
 }
 footer{
     background-color:black;
@@ -43,4 +51,6 @@ footer{
         margin:10px;
     }
 
-
+.title{
+    font-family: 'Playfair Display', serif;
+}
