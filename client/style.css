@@ -55,39 +55,11 @@ footer{
     font-family: 'Playfair Display', serif;
 }
 
-.card-body{
-    @media (min-width: 576px) {
-        width : 500px;
-    }
-                          
-    @media (min-width: 768px) {
-        width : 700px;
-     }
-    
-    @media (min-width: 992px) {
-        width : 992px;
-    }
-    
-    @media (min-width: 1200px) {
-        width : 1200px;
-    }
-    }
+/*test Lina guide*/
 
-    .img-guide{
 
-        @media (min-width: 576px) {
-            width : 100px;
-        }
-                              
-        @media (min-width: 768px) {
-            width : 200px;
-         }
-        
-        @media (min-width: 992px) {
-            width : 300px;
-        }
-        
-        @media (min-width: 1200px) {
-            width : 400px;
-        }
-        }
+
+.guide_element{
+    margin:50% 0 35px 0;
+    letter-spacing:1px;
+    text-align: justify;}
