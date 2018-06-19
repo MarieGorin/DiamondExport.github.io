@@ -1,0 +1,68 @@
+p{
+  font-family: 'Tajawal', sans-serif;;  
+}
+
+.custom{
+    text-align:center;
+    flex-grow:0;
+    flex-basis:25%;
+}
+
+.centerelement{
+    text-align:center;
+}
+footer{
+    background-color:black;
+    text-align: left;
+    min-width: 60px;
+    font-style: 'Arial Narrow';
+    font-size: 11px;
+    color: white;
+    padding: 20px;
+}
+
+.contactelement{
+    text-align:center;
+    -webkit-margin-after: 0.5em;
+}
+
+#contact{
+	background:#333333;
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
+
+.form-control{
+    height:100px;
+}
+
+.contact_element{
+        margin:0 0 35px 0;
+        font-family: 'Patua One', cursive;
+        text-transform: uppercase;
+        letter-spacing:1px;
+    }
+
+    .form-control{
+        height:100px;
+    }
+    
+    .with-margin{
+        margin:10px;
+    }
+
+.title{
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+#card-responsive{
+    @media (min-width: 576px) {width : 200px}
+                    
+    @media (min-width: 768px) {width : 200px}
+    
+    @media (min-width: 992px) {width : 300px}
+    
+    @media (min-width: 1200px) {width 400px}
+}
