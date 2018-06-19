@@ -72,15 +72,20 @@
                               <label for="exampleInputText" style="font-family: Tajawal, sans-serif">Your Message</label>
                              <textarea  class="form-control" placeholder="Description"></textarea> 
                             </div>
-                            <button type="submit" class="btn btn-default" style="font-family: Tajawal, sans-serif">Send Message</button>
+                            <button type="submit" onclick="popup()" class="btn btn-default" style="font-family: Tajawal, sans-serif">Send Message</button>
                           </form>
+                          <script>
+                          function popup() {
+                            window.location.replace("./index.html");
+                            alert("Thank you for you message!")
+                        }</script>
         
                           <hr>
                             <h3 class="contact_title title">Our Social Sites</h3>
                           <ul class="list-inline banner-social-buttons">
-                            <li><a href="#" class="btn btn-default btn-lg linky"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-                            <li><a href="https://www.instagram.com/tuascecil/" class="btn btn-default btn-lg linky"><i class="fa fa-instagram"> <span class="network-name">Instagram</span></i></a></li>
-                            <li><a href="https://www.etsy.com/ca-fr/shop/TuasandCecil" class="btn btn-default btn-lg"><i class="fa fa-etsy"> <span class="network-name">Etsy</span></i></a></li>
+                            <li><a href="#" class="btn btn-default btn-lg linky"><i class="fa fa-twitter" target = "_blank"> <span class="network-name">Twitter</span></i></a></li>
+                            <li><a href="https://www.instagram.com/tuascecil/" class="btn btn-default btn-lg linky" target = "_blank"><i class="fa fa-instagram"> <span class="network-name">Instagram</span></i></a></li>
+                            <li><a href="https://www.etsy.com/ca-fr/shop/TuasandCecil" class="btn btn-default btn-lg" target = "_blank"><i class="fa fa-etsy"> <span class="network-name">Etsy</span></i></a></li>
                           </ul>
                         </div>
                       </div>

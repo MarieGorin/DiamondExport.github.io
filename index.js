@@ -25,7 +25,7 @@ MongoClient.connect(url, function(err, db) {
         let messagegiven = parseInt(req.body.messagegiven);
     dbo.collection("messagerie").insertOne({name:namegiven,email:emailgiven,message:messagegiven},function(err, respo){
         if (err) throw err;
-        res.render('diamond',{post:true, "Thank you for your message!"})
+        
     });
     });
     
@@ -35,5 +35,6 @@ MongoClient.connect(url, function(err, db) {
     app.listen(3000, () => console.log('Example app listening on port 3000!'));
 });
 
+document.querySelector('#submitted').addEventListener('onclick', exit_alert);
 
 
