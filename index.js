@@ -1,8 +1,10 @@
-let MongoClient = require('mongodb').MongoClient;
+const mongo = require('mongodb');
 const express = require('express');
 const exphbs  = require('express-handlebars');
 const bodyParser = require('body-parser');
+
 let url = "mongodb://localhost:27017";
+let MongoClient = require('mongodb').MongoClient;
 
 MongoClient.connect(url, function(err, db) {
     if (err) throw err;
@@ -17,6 +19,16 @@ MongoClient.connect(url, function(err, db) {
 
     // parse application/json
     app.use(bodyParser.json());
+    app.post('/contact', function(req,res){
+        let namegiven = parseInt(req.body.namegiven);
+        let emailgiven = parseInt(req.body.emailgiven);
+        let messagegiven = parseInt(req.body.messagegiven);
+    dbo.collection("messagerie").insertOne({name:namegiven,email:emailgiven,message:messagegiven},function(err, respo){
+        if (err) throw err;
+        res.render('diamond',{post:true, "Thank you for your message!"})
+    });
+    });
+    
 
     app.use(express.static('client'));
 
