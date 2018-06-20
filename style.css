@@ -12,11 +12,11 @@ p{
     text-align:center;
 }
 footer{
-    background-color:#000000;
+    background-color:black;
     text-align: left;
     min-width: 60px;
     font-style: 'Arial Narrow';
-    font-size: 12px;
+    font-size: 11px;
     color: white;
     padding: 20px;
 }
@@ -54,6 +54,7 @@ footer{
 .title{
     font-family: 'Playfair Display', serif;
 }
+
 
 /*test Lina guide*/
 

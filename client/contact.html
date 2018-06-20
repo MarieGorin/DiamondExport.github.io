@@ -26,8 +26,8 @@
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                           <div class="navbar-nav">
                             <a class="nav-item nav-link custom" href="./collection.html">COLLECTION <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link custom" href="./guide.html">DIAMOND GUIDE</a>
-                            <a class="nav-item nav-link custom" href="./about.html">ABOUT US</a>
+                            <a class="nav-item nav-link custom" href="./guide.html">GUIDE</a>
+                            <a class="nav-item nav-link custom" href="./about.html">JOURNEY</a>
                             <a class="nav-item nav-link custom" href="./contact.html">CONTACT</a>
                           </div>
                         </div>
@@ -40,10 +40,11 @@
         </div>
 
         <br>
-
         <div class="row justify-content-center">
-            <h5 style="color:grey">IN THE JUNGLE SEARCHING FOR DIAMONDS</h5>
-        </div>
+          <h5 class="title" style="color:grey">IN THE JUNGLE SEARCHING FOR DIAMONDS</h5>
+      </div>
+
+        
         <br>
 
 <!--Beginning Contact Form-->
@@ -53,33 +54,38 @@
                 <div class="contact-section">
                     <div class="container">
                     <br>
-                      <h2 class="contact_title">Contact Us</h2>
+                      <h2 class="contact_title title">Contact Us</h2>
                     <br>
-                      <p class="contact_text">Feel free to contact us by filling the contact form or visiting our social network sites.</p>
+                      <p class="contact_text" style="font-family: Tajawal, sans-serif">Feel free to contact us by filling the contact form or visiting our social network sites.</p>
                       <div class="row justify-content-center">
                         <div class="col-md-8 col-md-offset-2">
                           <form class="form-horizontal">
                             <div class="form-group">
-                              <label for="exampleInputName2">Name</label>
+                              <label for="exampleInputName2" style="font-family: Tajawal, sans-serif">Name</label>
                               <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
                             </div>
                             <div class="form-group">
-                              <label for="exampleInputEmail2">Email</label>
+                              <label for="exampleInputEmail2" style="font-family: Tajawal, sans-serif">Email</label>
                               <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
                             </div>
                             <div class="form-group ">
-                              <label for="exampleInputText">Your Message</label>
+                              <label for="exampleInputText" style="font-family: Tajawal, sans-serif">Your Message</label>
                              <textarea  class="form-control" placeholder="Description"></textarea> 
                             </div>
-                            <button type="submit" class="btn btn-default">Send Message</button>
+                            <button type="submit" onclick="popup()" class="btn btn-default" style="font-family: Tajawal, sans-serif">Send Message</button>
                           </form>
+                          <script>
+                          function popup() {
+                            window.location.replace("./index.html");
+                            alert("Thank you for you message!")
+                        }</script>
         
                           <hr>
-                            <h3 class="contact_title">Our Social Sites</h3>
+                            <h3 class="contact_title title">Our Social Sites</h3>
                           <ul class="list-inline banner-social-buttons">
-                            <li><a href="#" class="btn btn-default btn-lg linky"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
-                            <li><a href="https://www.instagram.com/tuascecil/" class="btn btn-default btn-lg linky"><i class="fa fa-instagram"> <span class="network-name">Instagram</span></i></a></li>
-                            <li><a href="https://www.etsy.com/ca-fr/shop/TuasandCecil" class="btn btn-default btn-lg"><i class="fa fa-etsy"> <span class="network-name">Etsy</span></i></a></li>
+                            <li><a href="#" class="btn btn-default btn-lg linky"><i class="fa fa-twitter" target = "_blank"> <span class="network-name">Twitter</span></i></a></li>
+                            <li><a href="https://www.instagram.com/tuascecil/" class="btn btn-default btn-lg linky" target = "_blank"><i class="fa fa-instagram"> <span class="network-name">Instagram</span></i></a></li>
+                            <li><a href="https://www.etsy.com/ca-fr/shop/TuasandCecil" class="btn btn-default btn-lg" target = "_blank"><i class="fa fa-etsy"> <span class="network-name">Etsy</span></i></a></li>
                           </ul>
                         </div>
                       </div>
@@ -92,9 +98,8 @@
 
         <footer>
             <div class=container>
-                <p>Mentions légales</p>
-                <p>Patiuntur boni in in quem.</p>
-                <p>Quidam ad manibus observentur cavatis.</p>
+              <a href="./committments.html" style="color:white">Our Committments</p>
+              <p>© 2018 TuasandCecil, Inc</p>
             </div>
             </footer>
             <!-- Fin mentions légales -->
