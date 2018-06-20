@@ -1,5 +1,5 @@
 p{
-  font-family: 'Tajawal', sans-serif;;  
+  font-family: 'Tajawal', sans-serif;  
 }
 
 .custom{
@@ -66,3 +66,13 @@ footer{
 
 
 /*Steps title style - journey,about*/
+
+.titleStep{
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-weight: bold;
+}
+
+.textContent{
+    font-family: 'Tajawal', sans-serif;
+}
