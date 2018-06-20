@@ -1,4 +1,4 @@
-const mongo = require('mongodb');
+const mongodb = require('mongodb');
 const express = require('express');
 const exphbs  = require('express-handlebars');
 const bodyParser = require('body-parser');
@@ -19,22 +19,18 @@ MongoClient.connect(url, function(err, db) {
 
     // parse application/json
     app.use(bodyParser.json());
-    app.post('/contact', function(req,res){
-        let namegiven = parseInt(req.body.namegiven);
-        let emailgiven = parseInt(req.body.emailgiven);
-        let messagegiven = parseInt(req.body.messagegiven);
-    dbo.collection("messagerie").insertOne({name:namegiven,email:emailgiven,message:messagegiven},function(err, respo){
-        if (err) throw err;
-        
-    });
-    });
-    
+
 
     app.use(express.static('client'));
 
-    app.listen(3000, () => console.log('Example app listening on port 3000!'));
+    app.post('/post-feedback', function (req, res) {
+        db.collection('feedbacks').insertOne(req.body);    
+        res.redirect('/');
+    });
+
+    app.listen(2179, () => console.log('App listening on port 2179!'));
 });
 
-document.querySelector('#submitted').addEventListener('onclick', exit_alert);
+
 
 
