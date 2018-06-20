@@ -1,5 +1,5 @@
 p{
-  font-family: 'Tajawal', sans-serif;  
+  font-family: 'Tajawal', sans-serif;;  
 }
 
 .custom{
@@ -64,15 +64,7 @@ footer{
     letter-spacing:1px;
     text-align: justify;}
 
-
-/*Steps title style - journey,about*/
-
-.titleStep{
-    font-family: 'Playfair Display', serif;
-    color: black;
-    font-weight: bold;
-}
-
-.textContent{
-    font-family: 'Tajawal', sans-serif;
+.img_guide{
+    margin: 50% 0 35px 0;
+    border: black solid 2px;
 }
