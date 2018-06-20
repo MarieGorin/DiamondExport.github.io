@@ -64,7 +64,22 @@ footer{
     letter-spacing:1px;
     text-align: justify;}
 
+<<<<<<< HEAD
 .img_guide{
     margin: 50% 0 35px 0;
     border: black solid 2px;
 }
+=======
+
+/*Styles - journey,about*/
+
+.titleStep{
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-weight: bold;
+}
+
+.textContent{
+    font-family: 'Tajawal', sans-serif;
+}
+>>>>>>> 7ae82bebb978dd7e3044979254c302a0c2c1d87f
