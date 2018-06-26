@@ -11,7 +11,7 @@ MongoClient.connect(url, function(err, db) {
     var dbo = db.db("diamond");
 
     const app = express();
-    app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+    app.engine('handlebars', exphbs({defaultLayout: 'main'; extname:'hbs'; layoutsDir: __DiamondExport + '/views/layout'}));
     app.set('view engine', 'handlebars');
 
     // parse application/x-www-form-urlencoded
@@ -24,20 +24,26 @@ MongoClient.connect(url, function(err, db) {
     app.use(express.static('client'));
 
     app.post('/post-feedback', function (req, res) {
-        db.collection('feedbacks').insertOne(req.body);    
-        res.redirect('/');
+        var feedback = req.body.feedback;
+    var collection = req.db.get('diamond');
+    collection.insert({"diamond": feedback}, function (err, doc) {
+        if (err) {
+            res.send("There was a problem adding the information to the database.");
+        }
+        else {
+            res.redirect("/message")
+        }
     });
+});
 
-    app.get('/post-feedback', function(req, res) {
-        //var collection = req.db.get('feedbacks');
-        var fb = db.collection('feedbacks').get
-        fb.res.render('messages', obj);
-        //collection.find({}, {}, function(err, docs) {
-        //    var obj = {
-        //      fromDB: docs,
-        //      title: "Messages"
-        //    }
-        //    res.render('messages', obj);
+    app.get('/message', function(req, res) {
+        var collection = req.db.get('diamond');
+        collection.find({}, {}, function(err, docs) {
+           var obj = {
+             fromDB: docs,
+             title: "Messages"
+           }
+           res.render('post-feedback', obj);
         });
     });
     
